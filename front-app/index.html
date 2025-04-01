@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulibrary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="Логотип" class="logo">
+        <button id="allBooksBtn">Все книги</button>
+        <button id="myBooksBtn">Мои книги</button>
+        <button id="loginBtn">Войти</button>
+        <div id="userInfo" class="user-info" style="display: none;">
+            <span id="username"></span>
+            <button id="logoutBtn">Выход</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div>
+                <button id="loginTab">Вход</button>
+                <button id="registerTab">Регистрация</button>
+            </div>
+            <form id="authForm">
+                <div id="loginFields">
+                    <input type="text" id="loginUsername" placeholder="Электронная почта" required>
+                    <input type="password" id="loginPassword" placeholder="Пароль" required>
+                    <button type="submit">Войти</button>
+                </div>
+                <p id="message"></p>
+            </form>
+            <form id="registerForm">
+                <div id="registerFields" style="display: none;">
+                    <input type="text" id="registerUsername" placeholder="Логин" required>
+                    <input type="email" id="registerEmail" placeholder="Электронная почта" required>
+                    <input type="password" id="registerPassword" placeholder="Пароль" required>
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+                <p id="message"></p>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="content"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
