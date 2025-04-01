@@ -1,4 +1,6 @@
 __pycache__/
 venv/
 .idea/
+not_actual/
+books-env/
 desktop.ini
